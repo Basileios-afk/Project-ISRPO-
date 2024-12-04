@@ -1,0 +1,564 @@
+html {
+  height: 100%;
+}
+
+.img_logo {
+  width: 40%;
+  margin-top: 7px;
+}
+
+body {
+  font-family: 'Comfortaa', Arial, Helvetica, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a25 !important;
+  height: 100%;
+}
+
+/* header */
+
+.top-header-group {
+  width: 100%;
+  display: block;
+}
+
+
+.top-header {
+  border-radius: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  margin-top: 28px;
+  margin-left: 5%;
+  z-index: 100;
+  box-shadow: 20px 20px 50px  rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  /* background-color: #1a1a25; */
+
+}
+
+.main-logo {
+  width: 155px;
+  margin-left: 30px;
+  font-size: 40px; 
+}
+
+.header_right {
+  margin-left: auto;
+  padding-right: 0;
+}
+
+
+.header_right ul li {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 20px;
+  padding: 5px 0
+}
+
+.offer-link {
+  display: block;
+  transition: .9s linear;
+  transition-delay: 500ms;
+}
+
+.offer-link:hover {
+  text-decoration: underline darkgoldenrod;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
+a.text-header {
+  text-decoration: none;
+  color: darkgoldenrod;
+  font-family: "Comfortaa";
+}
+
+.button-header {
+  color: #13131a;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: darkgoldenrod;
+  border-radius: 100px;
+  transition: .2s linear;  
+}
+.button-header:hover {
+  background-color: rgb(134, 99, 9);
+  box-shadow: 0 0 0 2px #13131a, 0 0 0 4px darkgoldenrod;
+}
+
+button {
+  font-family: "Comfortaa";
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* end header */
+
+/* start left-menu */
+
+#st-2 {
+  font-family: "Comfortaa";
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+  display: block;
+  position: fixed;
+  opacity: 1;
+  text-align: left;
+  top: 160px;
+  z-index: 94034;
+}
+
+#st-2.st-left {
+  left: 0px;
+}
+
+#st-2.st-hidden.st-left {
+  left: -40px;
+}
+
+#st-2.st-hidden {
+  width: 80px;
+}
+
+#st-2.st-preview {
+  display: none!important;
+  opacity: 0!important;
+}
+
+#st-2 > div {
+  clear: left;
+  float: left;
+}
+
+#st-2 .st-btn {
+  border-radius: 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  height: 40px;
+  line-height: 20px;
+  margin-bottom: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 40px;
+  margin-top: 5px;
+ }
+
+
+#st-2 .st-btn > img {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  height: 20px;
+  margin-left: 0;
+  vertical-align: top;
+  width: 20px;
+}
+#st-2 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  left: -35px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+  filter: alpha(opacity=0);
+}
+
+#st-2 .st-total {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #fff;
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 15px;
+  margin-right: 0;
+  min-height: 34px;
+  max-width: 80px;
+  opacity: 1;
+  padding: 4px 0;
+  text-align: center;
+  width: 40px;
+}
+#st-2 .st-total.st-hidden {
+  display: none;
+}
+#st-2 .st-total > span {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0;
+}
+#st-2 .st-total > span.st-shares {
+  font-size: 9px;
+  line-height: 9px;
+}
+#st-2 .st-toggle {
+  left: -40px;
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  background: #ccc;
+  border-bottom-right-radius: 0px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  width: 40px;
+}
+#st-2.st-hidden .st-toggle {
+  border-top-right-radius: 0px;
+}
+#st-2.st-left .st-toggle .st-left {
+  display: inline-block;
+}
+#st-2.st-left.st-hidden .st-toggle .st-left {
+  display: none;
+}
+#st-2.st-left .st-toggle .st-right {
+  display: none;
+}
+#st-2.st-left.st-hidden .st-toggle .st-right {
+  display: inline-block;
+}#st-2:hover .st-toggle {
+  left: 0;
+}
+#st-2.st-hidden:hover .st-toggle {
+  left: 40px;
+}
+#st-2.st-toggleable:hover .st-btn.st-last {
+  border-bottom-right-radius: 0;
+}
+#st-2.st-toggleable:hover .st-btn.st-last:hover {
+  border-bottom-right-radius: 0px;
+}
+#st-2 .st-btn:hover {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#st-2.st-has-labels .st-btn:hover {
+  border-radius: 100px;
+  width: 160px;
+}
+#st-2:not(.st-has-labels) .st-btn:hover {
+  border-radius: 100px;
+  width: 52px;
+}
+#st-2 .st-btn.st-hide-label:hover {
+  border-radius: 100px;
+  width: 52px;
+}
+#st-2 .st-btn:hover > svg {
+  border-radius: 100px;
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > img {
+  border-radius: 100px;
+  margin-left: 5px;
+}
+#st-2 .st-btn:hover > span {
+  border-radius: 100px;
+  opacity: 1;
+  display: inline-block;
+  left: 0;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 1024px) {
+  #st-2 .st-btn:hover > svg {
+    margin-left: 0;
+  }
+  #st-2 .st-btn:hover > span {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  #st-2 {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+}
+#st-2.st-hidden {
+  bottom: -40px;
+  width: 100%;
+}
+#st-2.st-hidden.st-left {
+  left: 0;
+}
+#st-2.st-hidden.st-right {
+  right: 0;
+}
+#st-2 > div {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  clear: none;
+  flex: 1;
+  float: none;
+}
+#st-2 .st-total {
+  background: #fff;
+  padding: 6px 8px;
+}
+#st-2 .st-btn {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    text-align: center;
+    width: auto;
+}
+#st-2 .st-btn > span {
+  display: none;
+}
+#st-2 .st-toggle {
+  display: none;
+}body { padding-bottom: 48px; }
+}#st-2 .st-btn[data-network='telegram'] {
+  background-color: goldenrod
+}
+#st-2 .st-btn[data-network='telegram'] img {
+  filter: brightness(0) saturate(100%) invert(4%) sepia(6%) saturate(3971%) hue-rotate(202deg) brightness(95%) contrast(91%);
+}
+#st-2 .st-btn[data-network='telegram'] > span {
+  color: #13131a
+}
+#st-2 .st-btn[data-network='whatsapp'] {
+  background-color: goldenrod
+}
+#st-2 .st-btn[data-network='whatsapp'] img {
+  filter: brightness(0) saturate(100%) invert(4%) sepia(6%) saturate(3971%) hue-rotate(202deg) brightness(95%) contrast(91%);
+}
+#st-2 .st-btn[data-network='whatsapp'] > span {
+  color: #13131a
+}
+#st-2 .st-btn[data-network='vk'] {
+  background-color: goldenrod
+}
+#st-2 .st-btn[data-network='vk'] img {
+  filter: brightness(0) saturate(100%) invert(4%) sepia(6%) saturate(3971%) hue-rotate(202deg) brightness(95%) contrast(91%);
+}
+#st-2 .st-btn[data-network='vk'] > span {
+  color: #13131a
+}
+
+/* end left-menu */
+
+/* welcome page */
+.starter-container {
+  margin-top: -21px;
+  padding: 0;
+  min-width: 100%;
+  height: 102%;
+  background: url('../images/sushi1.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  background-position: center;  
+}
+
+.follow_container {
+  margin-left: 15%;
+  width: 70%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  border-radius: 80px;
+  box-shadow: 20px 20px 50px  rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.top-title{
+  font-family: "Comfortaa";
+  color: white;
+  font-size: 120px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.second-title {
+  font-weight: lighter; 
+  font-size: 30px; 
+  font-style: italic; 
+  text-transform: capitalize;
+}
+
+.white{
+  color: white;
+}
+
+
+/* end welcome page */
+
+/* Общие стили для контейнера */
+
+.title-menu {
+  margin-left: 15%;
+  padding-bottom: 1px;
+  width: 70%;
+  text-align: center;
+  border-radius: 80px;
+  box-shadow: 20px 20px 50px  rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(231, 218, 218, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.row {
+  padding-top: 22px;
+}
+
+
+.container2 {
+  /* border-radius: 50px; */
+  background: url('../images/delivery1.jpg') no-repeat center;
+  transform: rotate(180deg);
+  background-size: 2900px 1500px;
+  width: 100%; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+}
+
+/* Стили для списка фильтров */
+#filter-list {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0 0 20px; /* Отступ снизу */
+  display: flex; /* Используем flex для горизонтального расположения */
+  justify-content: center; /* Центрируем фильтры */
+}
+
+.filter {
+  padding: 10px 20px; /* Отступы для фильтров */
+  margin: 0 5px; /* Отступы между фильтрами */
+  cursor: pointer; /* Указатель при наведении */
+  background-color: #007bff; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border-radius: 5px; /* Закругленные углы */
+  transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.filter:hover {
+  background-color: #0056b3; /* Цвет при наведении */
+}
+
+.filter.active {
+  background-color: #0056b3; /* Активный фильтр */
+}
+
+/* Стили для портфолио */
+#portfolio {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  display: flex; /* Используем flex для горизонтального расположения */
+  flex-wrap: wrap; /* Позволяем переносить элементы на новую строку */
+  justify-content: center; /* Центрируем элементы */
+}
+
+.item {
+  position: relative; /* Для абсолютного позиционирования элементов внутри */
+  margin: 10px; /* Отступы между элементами */
+  width: 200px; /* Ширина элемента */
+  text-align: center; /* Центрируем текст */
+  transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+
+.item:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.item:hover h2.white{
+  background-color: #13131a;
+  box-shadow: 0 0 0 2px #13131a, 0 0 0 4px darkgoldenrod;
+}
+
+/* Стили для изображений */
+.item img {
+  width: 100%; /* Ширина изображения 100% от родительского элемента */
+  border-radius: 5px; /* Закругленные углы изображения */
+  cursor: pointer;
+}
+
+/* Стили для цен */
+h2.white {
+  color: #fff; /* Цвет текста */
+  margin: 1px 0 0; /* Отступы */
+  font-size: 18px; /* Размер шрифта */
+  border-radius: 50px;
+  width: 70px;
+  padding: 5px 0px 5px 0px;
+  margin-left: 70px;
+  height: 20px;
+  background-color: #13131a;
+}
+
+
+h2.white1 {
+  color: #fff;
+  margin: 10px 0px 40px 0px
+}
+
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Настройте высоту секции по необходимости */
+}
+
+.title {
+  text-align: center; /* Центрирует текст по горизонтали */
+  margin: 20px 0; /* Добавляет отступы сверху и снизу */
+  font-size: 2.5em; /* Увеличивает размер шрифта заголовка */
+  color: #dfdbdb; /* Устанавливает цвет шрифта */
+  font-family: 'Arial', sans-serif; /* Замените на желаемый шрифт */
+  text-transform: uppercase; /* Преобразует текст в верхний регистр */
+  letter-spacing: 2px; /* Увеличивает расстояние между буквами */
+}
+
+.desc-text {
+  text-align: justify; /* Выравнивает текст по обе стороны */
+  font-size: 1.2em; /* Увеличивает размер шрифта для текста */
+  line-height: 1.5; /* Увеличивает межстрочный интервал */
+  color: #666; /* Устанавливает более светлый цвет для текста */
+  padding: 0 20px; /* Добавляет внутренние отступы */
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для текста */
+  border-radius: 10px; /* Закругляет углы блока с текстом */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта глубины */
+}
+
+.description_content {
+  background-color: rgb(218, 122, 32); /* Укажите путь к изображению */
+  background-size: cover; /* Покрывает весь блок фоном */
+  background-position: center; /* Центрирует изображение в блоке */
+  height: 50%; /* Устанавливает высоту блока */
+  min-height: 220px; /* Минимальная высота для видимости фона */
+}
+.title-menu{
+  height: 50%
+}
